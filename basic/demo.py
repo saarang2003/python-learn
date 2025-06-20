@@ -1,0 +1,57 @@
+txt = "  Hello, World!  "
+txt2 = "hello123"
+txt3 = "hello\nworld"
+txt4 = "hello\tworld"
+txt5 = "12345"
+txt6 = "HELLO"
+txt7 = "hello"
+txt8 = "   "
+txt9 = "Hello World"
+
+print(txt.capitalize(), "# Converts first character to upper case")
+print(txt.casefold(), "# Converts to lower case (aggressive)")
+print(txt.center(20, "-"), "# Centers string, pads with '-'")
+print(txt.count("l"), "# Counts occurrences of 'l'")
+print(txt.encode(), "# Encodes to bytes using default 'utf-8'")
+print(txt.endswith("!  "), "# True if ends with '!  '")
+print(txt4.expandtabs(4), "# Replaces tab with spaces")
+print(txt.find("World"), "# Returns index of 'World'")
+print("Hello {}!".format("Bob"), "# Formats value into string")
+print("Name: {name}".format_map({"name": "Alice"}), "# Using dict with format_map")
+print(txt.index("World"), "# Returns index, raises error if not found")
+print(txt2.isalnum(), "# True if all characters are alphanumeric")
+print(txt2.isalpha(), "# True if all characters are alphabetic")
+print(txt2.isascii(), "# True if all characters are ASCII")
+print(txt5.isdecimal(), "# True if all characters are decimals")
+print(txt5.isdigit(), "# True if all characters are digits")
+print("my_var".isidentifier(), "# True if valid identifier")
+print(txt7.islower(), "# True if all characters are lowercase")
+print(txt5.isnumeric(), "# True if all characters are numeric")
+print("abc123!".isprintable(), "# True if all characters are printable")
+print(txt8.isspace(), "# True if all characters are whitespaces")
+print(txt9.istitle(), "# True if string is titlecased")
+print(txt6.isupper(), "# True if all characters are uppercase")
+print("-".join(["a", "b", "c"]), "# Joins list with '-'")
+print(txt.ljust(20, "*"), "# Left-justified, padded with '*'")
+print(txt.lower(), "# Converts to lowercase")
+print(txt.lstrip(), "# Removes leading spaces")
+trans = str.maketrans("H", "J")
+print(txt.translate(trans), "# Translates H -> J")
+print("hello world".partition(" "), "# Splits into tuple at first space")
+print(txt.replace("Hello", "Hi"), "# Replaces 'Hello' with 'Hi'")
+print(txt.rfind("l"), "# Finds last occurrence of 'l'")
+print(txt.rindex("l"), "# Returns last index, raises error if not found")
+print(txt.rjust(20, "."), "# Right-justified, padded with '.'")
+print("one two three".rpartition(" "), "# Splits at last space")
+print("a,b,c".rsplit(","), "# Splits from right by comma")
+print(txt.rstrip(), "# Removes trailing spaces")
+print(txt.strip(), "# Removes leading and trailing spaces")
+print("apple,banana,grape".split(","), "# Splits on comma")
+print(txt3.splitlines(), "# Splits on line breaks")
+print(txt.startswith("  He"), "# True if starts with '  He'")
+print(txt.strip(), "# Trim both ends")
+print(txt.swapcase(), "# Swaps case")
+print(txt.title(), "# Converts to title case")
+print(txt.translate(trans), "# Again, translates string")
+print(txt.upper(), "# Converts to upper case")
+print("42".zfill(5), "# Pads with zeros: '00042'")
